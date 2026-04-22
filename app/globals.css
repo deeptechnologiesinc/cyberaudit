@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+
+body {
+  background: #050d1a;
+  color: #fff;
+  font-family: system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+/* Report markdown rendering */
+.report-content h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 1.75rem 0 0.6rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(59,130,246,0.25);
+}
+.report-content h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #93c5fd;
+  margin: 1.1rem 0 0.35rem;
+}
+.report-content p {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+.report-content ul { list-style: none; padding: 0; margin-bottom: 0.75rem; }
+.report-content ul li {
+  position: relative;
+  padding-left: 1.25rem;
+  color: #cbd5e1;
+  margin-bottom: 0.3rem;
+  font-size: 0.925rem;
+}
+.report-content ul li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #3b82f6;
+}
+.report-content ol { padding-left: 1.5rem; margin-bottom: 0.75rem; }
+.report-content ol li { color: #cbd5e1; margin-bottom: 0.3rem; font-size: 0.925rem; }
+.report-content strong { color: #fff; font-weight: 600; }
+.report-content em { color: #94a3b8; font-style: italic; }
+.report-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+.report-content th {
+  background: rgba(59,130,246,0.15);
+  color: #93c5fd;
+  font-weight: 600;
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  border: 1px solid rgba(59,130,246,0.2);
+}
+.report-content td {
+  padding: 0.5rem 0.9rem;
+  color: #cbd5e1;
+  border: 1px solid rgba(59,130,246,0.12);
+}
+.report-content tr:nth-child(even) td { background: rgba(59,130,246,0.04); }
+.report-content hr {
+  border: none;
+  border-top: 1px solid rgba(59,130,246,0.2);
+  margin: 1.5rem 0;
+}
+.report-content blockquote {
+  border-left: 3px solid #3b82f6;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #94a3b8;
+  font-style: italic;
+}
